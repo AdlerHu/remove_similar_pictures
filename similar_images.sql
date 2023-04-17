@@ -31,6 +31,6 @@ ALTER TABLE mytable ADD INDEX index_name (column_name);
 SELECT * 
 FROM `all_images` 
 WHERE 
-((`dHash` < 11) AND (`grayscale` > 0.4)) 
+((`dHash` <= 10) AND (`grayscale` > 0.5)) 
 OR
 (( 10 < `dHash`) AND ( `dHash` < 21 ) AND (`grayscale` > 0.825));

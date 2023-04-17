@@ -6,10 +6,9 @@ name = "pypi"
 [packages]
 opencv-python = "*"
 numpy = "*"
-pillow = "*"
-matplotlib = "*"
 mysqlclient = "*"
 sqlalchemy = "*"
+scikit-image = "*"
 
 [dev-packages]
 
