@@ -47,7 +47,7 @@ def is_images_similar(image1, image2):
     img1, img2 = read_image(image1), read_image(image2)
 
     dhash = dhash_similarity(img1, img2)
-    
+
     # 兩張圖片 dHash 值為 0，表示兩張圖片完全一樣
     if dhash == 0:
         return True
@@ -75,7 +75,6 @@ def run_all_images(img_dir, pair_list):
         if is_images_similar(img1, img2):
             similar_images_set.add(img1)
             similar_images_set.add(img2)
-
 
 
 def move_similar_images(similar_images_dir):
